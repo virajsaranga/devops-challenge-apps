@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Navigate to the application directory
-cd /path/to/your/app
+cd D:/interview/1/devops-challenge-apps
 
 # Update the configuration file (e.g., changing an environment variable)
-sed -i 's/OLD_VALUE/NEW_VALUE/g' config.env
+sed -i 's/APP_ENV=development/APP_ENV=production/g' config.env
 
 # Restart the Docker container to apply the changes
 docker-compose down
